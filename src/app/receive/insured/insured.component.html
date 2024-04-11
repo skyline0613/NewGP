@@ -1,0 +1,142 @@
+
+<mat-dialog-content class="mat-typography">
+<div class="proposal-info-container" style="padding-left: 10px;">
+
+  <table class="tlb">
+    <tr class="group-name">
+      <td colspan="6">員工</td>
+    </tr>    
+    <tr>
+      <td class="label">員工證件類型</td>
+      <td>
+        <select class="form-control">
+          <option></option>
+          <option>身分證</option>
+          <option>護照</option>
+          <option>居留證</option>
+          <option>營利事業登記</option>
+          <option>台灣地區入出境許可證</option>
+          <option>其他</option>
+        </select>
+      </td>
+      <td class="label">證件號碼</td>
+      <td>
+        <input type="text" name="name" class="form-control" required />
+      </td>
+      <td class="label">員工姓名</td>
+      <td>
+        <input type="text" name="emp_name" class="form-control" required />
+      </td>
+    </tr>
+    <tr class="group-name">
+      <td colspan="6">被保人</td>
+    </tr>
+    <tr>
+      <td class="label"></td>
+      <td>
+        <!-- <select class="form-control">
+          <option></option>
+          <option>本人</option>
+          <option>配偶</option>
+          <option>子女</option>
+        </select> -->
+        <mat-form-field>
+          <mat-label>與員工關係</mat-label>
+          <mat-select>
+            <mat-option value="one">本人</mat-option>
+            <mat-option value="two">配偶</mat-option>
+            <mat-option value="two">子女</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+
+      </td>
+      <td class="label">被保人證號類型</td>
+      <td>
+        <select class="form-control">
+          <option></option>
+          <option>身分證</option>
+          <option>護照</option>
+          <option>居留證</option>
+          <option>營利事業登記</option>
+          <option>台灣地區入出境許可證</option>
+          <option>其他</option>
+        </select>
+      </td>
+      <td class="label">被保人證件號碼</td>
+      <td>
+        <input type="text" name="name" class="form-control" required />
+      </td>
+    </tr>
+    <tr>
+      <td class="label"></td>
+      <td>
+        <mat-form-field class="demo-form-field">
+          <mat-label>被保人姓名</mat-label>
+          <input
+            matInput
+            placeholder="Plan"
+            formControlName="firstCtrl"
+            required
+          />
+        </mat-form-field>
+      </td>
+      <td class="label">被保人生日</td>
+      <td>
+        <input type="text" name="birth" class="form-control" required />
+      </td>
+      <td class="label">被保人性別</td>
+      <td>
+        <select class="form-control">
+          <option></option>
+          <option>M</option>
+          <option>F</option>
+          <option>其他</option>
+        </select>        
+      </td>
+    </tr>
+    <tr>
+      <td class="label">國籍</td>
+      <td>
+        <input type="text" name="name" class="form-control" required />
+      </td>
+      <td class="label">職業代碼</td>
+      <td>
+        <input type="text" name="name" class="form-control" required />
+      </td>
+      <td class="label">職業類別</td>
+      <td>
+        <input type="text" name="name" class="form-control" required />
+      </td>
+    </tr>
+    <tr class="group-name">
+      <td colspan="6">投保內容</td>
+    </tr>
+    <tr>
+      <td class="label"></td>
+      <td>
+        <mat-form-field class="demo-form-field">
+          <mat-label>計畫別</mat-label>
+          <input
+            matInput
+            placeholder="Plan"
+            formControlName="firstCtrl"
+            required
+          />
+        </mat-form-field>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+
+  <div class="form-group" style="float: right;">
+    <button class="btn btn-danger btn-block">存檔</button>&nbsp;
+    <button class="btn btn-danger btn-block">新增下一筆</button>
+  </div>
+
+</div>
+
+</mat-dialog-content>
+
+

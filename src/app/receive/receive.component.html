@@ -1,0 +1,34 @@
+<div class="container mt-5">
+  <mat-stepper linear #stepper>
+    <mat-step>
+      <ng-template matStepLabel>要保書資訊</ng-template>
+      <app-proposal-info></app-proposal-info>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>被保險人投保資訊</ng-template>
+      <app-insured-management></app-insured-management>
+      
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>確認</ng-template>
+      <p>You are now done.</p>
+      <div>
+        <button mat-button matStepperPrevious>回上一步</button>
+        <button mat-button (click)="stepper.reset()">Reset</button>
+      </div>
+
+      <div style="height: 20px;"></div>
+
+      <div style="float: right;"> 
+        <button class="btn btn-danger btn-block" matStepperPrevious>上一步</button>
+        &nbsp;
+        <button class="btn btn-danger btn-block" matStepperNext (click)="openDialog()">受理完成</button>
+      </div> 
+      
+
+
+
+    </mat-step>
+
+  </mat-stepper>
+</div>

@@ -1,0 +1,10 @@
+
+.proposer-container {
+  margin: 30px auto;
+
+}
+
+.proposer-container mat-label{
+  margin: 30px auto;
+  margin-left: 10px;
+}

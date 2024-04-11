@@ -1,0 +1,242 @@
+<div class="container mt-5">
+  <form
+    #userForm="ngForm"
+    (ngSubmit)="userForm.form.valid && onSubmit(userForm)"
+  >
+    <div class="form-group mb-3">
+      <label>Name</label>
+      <input
+        type="text"
+        name="name"
+        class="form-control"
+        [(ngModel)]="model.name"
+        #name="ngModel"
+        [ngClass]="{ 'is-invalid': userForm.submitted && name.invalid }"
+        required
+      />
+      <label>Name</label>
+      <input
+        type="text"
+        name="name"
+        class="form-control"
+        [(ngModel)]="model.name"
+        #name="ngModel"
+        [ngClass]="{ 'is-invalid': userForm.submitted && name.invalid }"
+        required
+      />
+    </div>
+    <div class="form-group mb-3">
+      <label>Email</label>
+      <input
+        type="email"
+        class="form-control"
+        name="email"
+        [(ngModel)]="model.email"
+        #email="ngModel"
+        [ngClass]="{ 'is-invalid': userForm.submitted && email.invalid }"
+        email
+        required
+      />
+      <div *ngIf="userForm.submitted && email.invalid" class="invalid-feedback">
+        <div *ngIf="email.errors.required">Email is required</div>
+        <div *ngIf="email.errors.email">Must be a valid email address</div>
+      </div>
+    </div>
+    <div class="form-group mb-3">
+      <label>Password</label>
+      <input
+        type="password"
+        class="form-control"
+        name="password"
+        [(ngModel)]="model.password"
+        #password="ngModel"
+        [ngClass]="{ 'is-invalid': userForm.submitted && password.invalid }"
+        minlength="8"
+        required
+      />
+      <div
+        *ngIf="userForm.submitted && password.invalid"
+        class="invalid-feedback"
+      >
+        <div *ngIf="password.errors.required">Password is required</div>
+        <div *ngIf="password.errors.minlength">
+          Password should be at least 8 characters long
+        </div>
+      </div>
+    </div>
+    <div class="form-group mb-3">
+      <label>Hobbies</label>
+      <select class="form-control" name="hobbies" [(ngModel)]="hobbies">
+        <option value="">Select an option</option>
+        <option *ngFor="let hoby of hobbies" [value]="hoby">
+          {{ hoby }}
+        </option>
+      </select>
+    </div>
+    <div class="form-group">
+      <button class="btn btn-danger btn-block">Submit</button>
+    </div>
+  </form>
+
+  <table class="example-full-width" cellspacing="0">
+    <tr>
+      <td>
+        <input
+          type="email"
+          class="form-control"
+          name="email"
+          [(ngModel)]="model.email"
+          #email="ngModel"
+          [ngClass]="{ 'is-invalid': userForm.submitted && email.invalid }"
+          email
+          required
+        />
+      </td>
+      <td>
+        <input matInput placeholder="State" />
+      </td>
+      <td>
+        <mat-form-field class="example-full-width">
+          <input
+            matInput
+            #postalCode
+            maxlength="5"
+            placeholder="Postal Code"
+            value="94043"
+          />
+          <mat-hint align="end">{{ postalCode.value.length }} / 5</mat-hint>
+        </mat-form-field>
+      </td>
+    </tr>
+  </table>
+  <table class="example-full-width" cellspacing="0">
+    <tr>
+      <td>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="City" />
+        </mat-form-field>
+      </td>
+      <td>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="State" />
+        </mat-form-field>
+      </td>
+      <td>
+        <mat-form-field class="example-full-width">
+          <input
+            matInput
+            #postalCode
+            maxlength="5"
+            placeholder="Postal Code"
+            value="94043"
+          />
+          <mat-hint align="end">{{ postalCode.value.length }} / 5</mat-hint>
+        </mat-form-field>
+      </td>
+    </tr>
+  </table>
+
+  <table class="example-full-width" cellspacing="0">
+    <tr>
+      <td>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="City" />
+        </mat-form-field>
+      </td>
+      <td>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="State" />
+        </mat-form-field>
+      </td>
+      <td>
+        <mat-form-field class="example-full-width">
+          <input
+            matInput
+            #postalCode
+            maxlength="5"
+            placeholder="Postal Code"
+            value="94043"
+          />
+          <mat-hint align="end">{{ postalCode.value.length }} / 5</mat-hint>
+        </mat-form-field>
+      </td>
+    </tr>
+  </table>
+
+  <div class="example-container">
+    <mat-form-field hintLabel="Max 10 characters">
+      <mat-label>Enter some input</mat-label>
+      <input matInput #input maxlength="10" placeholder="Ex. Nougat" />
+      <mat-hint align="end">{{ input.value.length }}/10</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field>
+      <label>Select me</label>
+      <mat-label>Select me</mat-label>
+      <mat-select>
+        <mat-option value="option">Option</mat-option>
+      </mat-select>
+      <mat-hint align="end">Here's the dropdown arrow ^</mat-hint>
+    </mat-form-field>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <mat-label>姓名</mat-label>
+  <mat-form-field floatLabel="always">
+    <input
+      name="name"
+      matInput
+      placeholder="姓名"
+      formControlName="name"
+      required
+    />
+  </mat-form-field>
+  <mat-label>電話</mat-label>
+  <mat-form-field floatLabel="always">
+    <input
+      name="tel"
+      matInput
+      placeholder="電話"
+      formControlName="tel"
+      required
+    />
+  </mat-form-field>
+  <mat-label>Enter some input</mat-label>
+  <mat-form-field floatLabel="always">
+    <input
+      name="name3"
+      matInput
+      placeholder="姓名3"
+      formControlName="name3"
+      required
+    />
+  </mat-form-field>
+
+  <BR>
+    <mat-label>Enter some input</mat-label>
+    <mat-form-field floatLabel="always">
+      
+      <input
+        name="name4"
+        matInput
+        placeholder="姓名4"
+        formControlName="name4"
+        required
+      />
+    </mat-form-field>
+    
+    <label>Name</label>
+    <input
+      type="text"
+      name="name"
+      class="form-control"
+      [(ngModel)]="model.name"
+      #name="ngModel"
+      [ngClass]="{ 'is-invalid': userForm.submitted && name.invalid }"
+      required
+    />
+
+</div>
+
+

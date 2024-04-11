@@ -1,0 +1,252 @@
+<div class="proposal-info-container">
+  <form autocomplete="off">
+    <table class="tlb">
+      <tr>
+        <td class="label">要保日期</td>
+        <td>
+          <input
+            type="text"
+            name="proposql-dt"
+            class="form-control"
+            autocomplete="false"
+            required
+          />
+        </td>
+        <td class="label">團險案件名稱</td>
+        <td>
+          <input type="text" name="project" class="form-control" required />
+        </td>
+        <td class="label">建檔編號</td>
+        <td>
+          <input type="text" name="serial" class="form-control" required />
+        </td>
+      </tr>
+      <tr class="group-name">
+        <td colspan="6">要保人(要保單位)資訊</td>
+      </tr>
+      <tr>
+        <td class="label">案件類型</td>
+        <td>
+          <input type="text" name="case_type" class="form-control" required />
+        </td>
+        <td class="label">證件號碼</td>
+        <td>
+          <input type="text" name="number" class="form-control" required />
+        </td>
+        <td class="label">要保人(要保單位)</td>
+        <td>
+          <input type="text" name="proposql_owner" class="form-control" required />
+        </td>
+      </tr>
+      <tr>
+        <td class="label">負責人/代表人姓名</td>
+        <td>
+          <input type="text" name="owner_name" class="form-control" required />
+        </td>
+        <td class="label">營業性質</td>
+        <td>
+          <input type="text" name="name" class="form-control" required />
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="label">市內電話</td>
+        <td>
+          <input type="text" name="name" class="form-control" required />
+        </td>
+        <td class="label">行動電話</td>
+        <td>
+          <input type="text" name="name" class="form-control" required />
+        </td>
+        <td class="label">傳真</td>
+        <td>
+          <input type="text" name="name" class="form-control" required />
+        </td>
+      </tr>
+      <tr>
+        <td class="label">郵遞區號</td>
+        <td>
+          <input type="text" name="name" class="form-control" required />
+        </td>
+        <td class="label">聯絡地址</td>
+        <td>
+          <input type="text" name="name" class="form-control" required />
+        </td>
+        <td class="label">勞保職災編號</td>
+        <td>
+          <input type="text" name="name" class="form-control" required />
+        </td>
+      </tr>
+      <tr class="group-name">
+        <td colspan="6">投保資訊</td>
+      </tr>
+      <tr>
+        <td class="label">保險起日</td>
+        <td>
+          <input type="text" name="name" class="form-control" required />
+        </td>
+        <td class="label">保險終日</td>
+        <td>
+          <input type="text" name="name" class="form-control" required />
+        </td>
+        <td class="label">繳別</td>
+        <td>
+          <select class="form-control">
+            <option></option>
+            <option>月繳</option>
+            <option>季繳</option>
+            <option>半年繳</option>
+            <option>年繳</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td class="label">保費分攤方式</td>
+        <td>
+          <input type="text" name="name" class="form-control" required />
+        </td>
+        <td class="label">員工之保費：要保單位負擔</td>
+        <td>
+          <input type="text" name="name" class="form-control" required />
+        </td>
+        <td class="label">員工之保費：員工負擔</td>
+        <td>
+          <input type="text" name="name" class="form-control" required />
+        </td>
+      </tr>
+      <tr>
+        <td class="label">眷屬之保費：要保單位負擔</td>
+        <td>
+          <input type="text" name="name" class="form-control" required />
+        </td>
+        <td class="label">眷屬之保費：員工負擔</td>
+        <td>
+          <input type="text" name="name" class="form-control" required />
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="6">
+          <BR />
+          被保險人是否已投保其他商業實支實付型傷害醫療 ?
+          <mat-radio-group aria-label="Select an option">
+            <mat-radio-button value="1">是</mat-radio-button>
+            <mat-radio-button value="2">否</mat-radio-button>
+          </mat-radio-group>
+          <BR />
+          被保險人是否已投保其他商業實支實付型醫療 ?
+          <mat-radio-group aria-label="Select an option">
+            <mat-radio-button value="1">是</mat-radio-button>
+            <mat-radio-button value="2">否</mat-radio-button>
+          </mat-radio-group>
+          <BR />
+          台灣人壽團體眷屬身故前未給付保險金受益人指定批註條款 ?
+          <mat-radio-group aria-label="Select an option">
+            <mat-radio-button value="1">是</mat-radio-button>
+            <mat-radio-button value="2">否</mat-radio-button>
+          </mat-radio-group>
+          <BR />
+          填寫受益人之聯絡地址及電話 ?
+          <mat-radio-group aria-label="Select an option">
+            <mat-radio-button value="1">是</mat-radio-button>
+            <mat-radio-button value="2">否</mat-radio-button>
+          </mat-radio-group>
+          <BR />
+          身故保險金或喪葬費用保險金受益人 ?
+          <mat-radio-group aria-label="Select an option">
+            <mat-radio-button value="1">是</mat-radio-button>
+            <mat-radio-button value="2">否</mat-radio-button>
+          </mat-radio-group>
+          <BR />
+          要保單位已詳閱本要保書、 『 要保書填寫說明 』 、 『 人壽保險投保人須知
+          』 、 『蒐集、處理及利用個人資料告知書』
+          、保險單條款樣張或影本及其他相關約定，並轉知被保險人。 ?
+          <mat-radio-group aria-label="Select an option">
+            <mat-radio-button value="1">是</mat-radio-button>
+            <mat-radio-button value="2">否</mat-radio-button>
+          </mat-radio-group>
+        </td>
+      </tr>
+      <tr class="group-name">
+        <td colspan="6">服務人員暨受理人員資訊</td>
+      </tr>
+      <tr>
+        <td>業務員登錄字號一</td>
+        <td>
+          <input type="text" name="name" class="form-control" required value="NB1G339028" />
+        </td>
+        <td>服務報酬率一</td>
+        <td>
+          <input type="text" name="name" class="form-control" required />
+        </td>
+        <td>業務員姓名一</td>
+        <td>
+          <input type="text" name="name" class="form-control" required value="蘇X昇" readonly />
+        </td>
+      </tr>
+      <tr>
+        <td>業務單位代號一</td>
+        <td>
+          <input type="text" name="name" class="form-control" required />
+        </td>
+        <td>業務單位名稱一</td>
+        <td>
+          <input type="text" name="name" class="form-control" required />
+        </td>
+        <td>業務員登錄字號二</td>
+        <td>
+          <input type="text" name="name" class="form-control" required />
+        </td>
+      </tr>
+      <tr>
+        <td>服務報酬率二</td>
+        <td>
+          <input type="text" name="name" class="form-control" required />
+        </td>
+        <td>業務員姓名二</td>
+        <td>
+          <input type="text" name="name" class="form-control" required />
+        </td>
+        <td>業務單位代號二</td>
+        <td>
+          <input type="text" name="name" class="form-control" required />
+        </td>
+      </tr>
+      <tr>
+        <td>業務單位名稱二</td>
+        <td>
+          <input type="text" name="name" class="form-control" required />
+        </td>
+        <td>鍵檔日期</td>
+        <td>
+          <input type="text" name="name" class="form-control" required />
+        </td>
+        <td>最後更新日期</td>
+        <td>
+          <input type="text" name="name" class="form-control" required />
+        </td>
+      </tr>
+      <tr>
+        <td>鍵檔完成日期</td>
+        <td>
+          <input type="text" name="name" class="form-control" required />
+        </td>
+        <td>鍵檔人員</td>
+        <td>
+          <input type="text" name="name" class="form-control" required />
+        </td>
+        <td>更新人員</td>
+        <td>
+          <input type="text" name="name" class="form-control" required />
+        </td>
+      </tr>
+    </table>
+
+    <div class="form-group" style="float: right;">
+      <button class="btn btn-danger btn-block" matStepperNext>存檔，跳下一步</button>&nbsp;
+      <button class="btn btn-danger btn-block" matStepperNext>下一步</button>
+    </div>
+  </form>
+</div>

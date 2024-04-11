@@ -1,0 +1,25 @@
+
+.proposal-info-container {
+  margin: 30px auto;
+
+}
+
+.proposal-info-container mat-label{
+  margin: 30px auto;
+  margin-left: 10px;
+}
+
+.tlb tr{
+  height: 50px; 
+}
+
+.tlb .group-name {
+  background-color: #007c7c; color: white; text-align: center; height: 20px;
+  font-family: var(--mdc-typography-button-font-family, var(--mdc-typography-font-family, Roboto, sans-serif));
+  font-size: var(--mdc-typography-button-font-size, 14px);
+  font-weight: bold;
+}
+
+.tlb .label{
+  text-align: right;
+}

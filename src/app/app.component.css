@@ -1,0 +1,19 @@
+
+>>> body {
+    margin: 0;
+}
+
+main {
+    margin: 30px;
+}
+
+mat-toolbar a {
+  color: white;
+  
+}
+
+
+.mat-toolbar {
+  background-color: #007c7c;
+
+}

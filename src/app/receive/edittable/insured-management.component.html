@@ -1,0 +1,36 @@
+
+<article class="table-header">
+
+  <div>
+    <!-- <button mat-raised-button (click)="openDialog('0ms', '0ms')">Open dialog without animation</button> -->
+    <button class="button-add-row" mat-button (click)="openDialog('0ms', '0ms')">
+      新增
+    </button>
+    &nbsp;
+    <button class="button-add-row" mat-button>
+      維護
+    </button>
+    &nbsp;
+    <button class="button-add-row" mat-button>
+      刪除
+    </button> 
+    &nbsp; 
+    <button class="button-add-row" mat-button>
+      上傳
+    </button>    
+    
+  </div>
+</article>
+<div style="width: 1000px;">
+<div class="mat-elevation-z8">
+
+  <app-insured-grid></app-insured-grid>
+</div>
+<div style="height: 20px;"></div>
+
+<div style="float: right;"> 
+  <button class="btn btn-danger btn-block" matStepperPrevious>上一步</button>
+  &nbsp;
+  <button class="btn btn-danger btn-block" matStepperNext>下一步</button>
+  </div> 
+</div>
